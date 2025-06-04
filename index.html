@@ -1,139 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Qamar | Capturer</title>
-  </head>
-  <body>
-    <header class="header" id="home">
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">
-              <span>Qamar</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qamar | Visual Storytelling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Qamar</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">SIGNIN</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-particles">
+            <div class="particle" style="width: 4px; height: 4px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="width: 6px; height: 6px; top: 80%; left: 80%; animation-delay: 2s;"></div>
+            <div class="particle" style="width: 3px; height: 3px; top: 60%; left: 20%; animation-delay: 4s;"></div>
+            <div class="particle" style="width: 5px; height: 5px; top: 30%; left: 70%; animation-delay: 1s;"></div>
+        </div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">Capturing Moments</h1>
+            <p class="hero-subtitle">Where Every Frame Tells a Story</p>
+            <a class="hero-cta">
+                <span>Explore Our Work</span>
+                <i class="ri-arrow-right-line"></i>
             </a>
-          </div>
-          <span id="user-info" class="user-profile-display"></span>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
         </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-          <li><a href="signin.html">SIGNIN</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="section__container about__container" id="about">
-      <h2 class="section__header">WE CAPTURE THE MOMENTS</h2>
-      <p class="section__description">
-        At Qamar, we specialize in freezing those fleeting moments in time
-        that hold immense significance for you. With our passion for photography
-        and keen eye for detail, we transform ordinary moments into
-        extraordinary memories.
-      </p>
-      <p class="section__description">
-        Whether it's a milestone event, a candid portrait, or the breathtaking
-        beauty of nature, we strive to encapsulate the essence of every moment,
-        ensuring that your cherished memories last a lifetime. Trust us to
-        capture the magic of your life's journey, one frame at a time.
-      </p>
-      </div>
-    <section class="service" id="service">
-  <div class="section__container service__container">
-    <h2 class="section__header">~ OUR OFFERINGS ~</h2>
-    <p class="section__description">
-      At Qamar, our lens is drawn to the diverse tapestry of the world, from its untouched natural wonders to its intricate man-made marvels. We blend the artistry of light and composition to capture the serene grandeur of vast landscapes, the vibrant spirit of wildlife, and the compelling geometry of architectural and urban spaces. We are dedicated to crafting visual narratives that illuminate the unique beauty in every scene.
-    </p>
-    <div class="service__grid">
-      <div class="service__card">
-        <h4>Nature & Landscape Photography</h4>
-        <p>
-          Immerse yourself in the majesty of Earth's scenic beauty. We capture sweeping vistas, dramatic skies, and the serene grandeur of natural terrains, revealing the soul of every outdoor space.
-        </p>
-      </div>
-      <div class="service__card">
-        <h4>Wildlife & Animal Photography</h4>
-        <p>
-          Experience the untamed world through our detailed lens. We meticulously document the unique behaviors, vibrant colors, and stunning grace of diverse animal species and birds in their natural habitats.
-        </p>
-      </div>
-      <div class="service__card">
-        <h4>Architectural & Urban Exploration</h4>
-        <p>
-          Discover the compelling lines and dynamic energy of the built environment. We specialize in capturing the intricate details of buildings, dynamic cityscapes, and the unique character of urban landscapes.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="section__container gallery__container">
-      <h2 class="section__header">~ GALLERY ~</h2>
-      <div class="gallery__grid">
-        <img src="img1.jpeg" alt="gallery" />
-        <img src="img2.jpeg" alt="gallery" />
-        <img src="img3.jpeg" alt="gallery" />
-        <img src="img4.jpeg" alt="gallery" />
-        <img src="img5.jpeg" alt="gallery" />
-        <img src="img6.jpeg" alt="gallery" />
-        <img src="img7.jpeg" alt="gallery" />
-        <img src="img8.jpeg" alt="gallery" />
-      </div>
-      <div class="gallery__btn">
-            <a href="gallery.html">VIEW GALLERY</a>
-      </div>
     </section>
-    
-    <footer id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <a href="index.html" class="nav__logo"><span>Qamar</span></a> 
-          <p>Providing quality and excellence since 2025.</p>
-          <div class="footer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-            <a href="#"><i class="ri-pinterest-line"></i></a>
-          </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">We Capture The Moments</h2>
+                <p class="section-subtitle">Transforming fleeting moments into timeless memories</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>At Qamar, we specialize in freezing those fleeting moments in time that hold immense significance for you. With our passion for photography and keen eye for detail, we transform ordinary moments into extraordinary memories.</p>
+                    <p>Whether it's a milestone event, a candid portrait, or the breathtaking beauty of nature, we strive to encapsulate the essence of every moment, ensuring that your cherished memories last a lifetime. Trust us to capture the magic of your life's journey, one frame at a time.</p>
+                </div>
+                <div class="about-visual fade-in">
+                    <i class="ri-camera-lens-line" style="font-size: 8rem; color: var(--primary); opacity: 0.3;"><img src="moon.jpg" alt=""></i>
+                </div>
+            </div>
         </div>
-        <div class="footer__col">
-          <ul class="footer__links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-          </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Our Offerings</h2>
+                <p class="section-subtitle">Professional photography services tailored to your vision</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="ri-landscape-line"></i>
+                    </div>
+                    <h3 class="service-title">Nature & Landscape</h3>
+                    <p class="service-description">Immerse yourself in the majesty of Earth's scenic beauty. We capture sweeping vistas, dramatic skies, and the serene grandeur of natural terrains.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="ri-bug-line"></i>
+                    </div>
+                    <h3 class="service-title">Wildlife & Animal</h3>
+                    <p class="service-description">Experience the untamed world through our detailed lens. We document unique behaviors, vibrant colors, and stunning grace of diverse species.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="ri-building-line"></i>
+                    </div>
+                    <h3 class="service-title">Architectural & Urban</h3>
+                    <p class="service-description">Discover the compelling lines and dynamic energy of the built environment. We capture intricate details and unique character of urban landscapes.</p>
+                </div>
+            </div>
         </div>
-        <div class="footer__col">
-          <h4>STAY IN TOUCH</h4>
-          <p>
-            Keep up-to-date with all things Capturer! Join our community and
-            never miss a moment!
-          </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">A glimpse into our visual storytelling</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                        <img src="img1.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img2.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img3.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img4.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img5.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img6.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img7.jpeg" alt="gallery"/>
+                </div>
+                <div class="gallery-item fade-in">
+                        <img src="img8.jpeg" alt="gallery"/>
+                </div>
+                <a href="gallery.html" class="gallery-btn fade-in">
+                    <span>View Full Gallery</span>
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2024 Qamar Photography. All rights reserved.
-      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand fade-in">
+                    <h3>Qamar</h3>
+                    <p>Providing quality and excellence since 2025. Capturing moments that matter.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                        <a href="#"><i class="ri-pinterest-line"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links fade-in">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links fade-in">
+                    <h4>Stay Connected</h4>
+                    <p>Keep up-to-date with all things Qamar! Join our community and never miss a moment!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Qamar Photography. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Hover effects for cursor
+        document.querySelectorAll('a, button, .gallery-item').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+            });
+        });
+
+        // Navigation scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Gallery item hover effects
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) rotateZ(2deg)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotateZ(0deg)';
+            });
+        });
+
+        // Add some dynamic particles
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.width = (Math.random() * 5 + 2) + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.animationDelay = Math.random() * 6 + 's';
+            
+            document.querySelector('.hero-particles').appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 6000);
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 2000);
+        
+        // Initialize some particles
+        for (let i = 0; i < 10; i++) {
+            setTimeout(createParticle, i * 200);
+        }
+
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', () => {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 150);
+            }
+        });
+
+        // Add floating animation to service cards
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.2}s`;
+            card.style.animation = 'float 6s ease-in-out infinite';
+        });
+
+        // Add parallax effect to sections
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            document.querySelectorAll('.section-header').forEach(header => {
+                header.style.transform = `translateY(${rate * 0.1}px)`;
+            });
+        });
+
+        // Add click ripple effect
+        function createRipple(event) {
+            const button = event.currentTarget;
+            const ripple = document.createElement('span');
+            const rect = button.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple');
+            
+            button.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        }
+
+        // Add ripple effect to buttons
+        document.querySelectorAll('.hero-cta, .gallery-btn').forEach(btn => {
+            btn.addEventListener('click', createRipple);
+            btn.style.position = 'relative';
+            btn.style.overflow = 'hidden';
+        });
+
+        // Add CSS for ripple effect
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(rippleStyle);
+
+        // Add magnetic effect to buttons
+        document.querySelectorAll('.hero-cta, .gallery-btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                btn.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px) translateY(-5px)`;
+            });
+            
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0px, 0px) translateY(0px)';
+            });
+        });
+
+        // Add tilt effect to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+            });
+        });
+
+        // Loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
 </html>
